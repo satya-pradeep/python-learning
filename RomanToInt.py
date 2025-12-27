@@ -1,0 +1,15 @@
+#RomantoInt
+class Solution:
+    def romanToInt(self,s :str):
+        self.s=s
+        r={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
+        total=0
+        for i in range(len(s)):
+            if i+1<len(s) and r[s[i]]<r[s[i+1]]:
+                total -= r[s[i]]
+            else:
+                total += r[s[i]]
+        return total
+s=Solution()
+r=s.romanToInt("MCMXCIV")
+print(r)
