@@ -37,6 +37,8 @@ while True:
     elif choice == "5":
         print("Exit / Finish Order")
         break
+    else:
+        print("Invalid Choice")
 
 print("========= BILL =========")
 print()
