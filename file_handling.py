@@ -84,5 +84,65 @@ else:
 #Delete Folder
 #To delete an entire folder, use the os.rmdir() method:
 
+#image 
+'''img = open("passphoto.jpeg","rb")
+print(img.read())
+img.close()'''
+'''
+with open("pradeep.txt","w") as p:
+    p.write("hi hello good morning")
+with open("pradeep.txt","r") as p:
+    s = p.read()
+    print("satya, " + s)
+p.close()
+'''
 
+#read + write "r+"
+
+'''p = open("pradeep.txt","r+")
+print(p.read())
+p.seek(0)
+p.write("hi pradeep")
+
+p.close()'''
+
+'''with open("pradeep.txt","r") as p:
+    print(p.read())
+p.close()'''
+
+
+#write read
+
+'''p = open("pradeep.txt", "w+")
+p.write("dfbnm,")
+p.seek(0)
+print(p.read())
+p.close()'''
+
+#adding name "satya" at before the sentence
+'''p = open("pradeep.txt","r+")
+content = p.read()
+p.seek(0)
+p.write(" G "+content)
+p.close()
+'''
+
+#add initital after name
+
+'''a = open('pradeep.txt','r+')
+content = a.read()
+words = content.split()
+words.insert(1, "G ")
+new_content = " ".join(words)
+a.seek(0)
+a.write(new_content)
+a.close()
+'''
+
+#replace("old","new")
+'''with open("pradeep.txt",'r+') as p:
+    data = p.read()
+    new_data = data.replace("morning","night")
+    p.seek(0)
+    p.write(new_data)'''
 
